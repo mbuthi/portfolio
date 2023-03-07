@@ -1,0 +1,108 @@
+.nav {
+    height: 80px;
+    width: 100vw;
+    background-color: var(--white);
+    box-shadow: 4px 0 4px rgb(34, 34, 34, .8);
+    font-weight: 500;
+    position: fixed;
+    z-index: 100;
+}
+.navItemsLeft {
+    float: left;
+    margin-left: 40px;
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto 0;    
+    padding: 15px 10px;
+}
+.navItemLeft {
+    display: inline-block;
+}
+
+.navItemsLeft .navItemLeft {
+    padding: 0;
+}
+.navItemsLeft .navLink {    
+    text-transform: uppercase;
+      
+}
+.caption {
+    position: absolute;
+    top: 40px;
+    width: 200px;
+}
+.navItems {
+    float: right;    
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+.navItem {
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 30px;
+}
+.nav1 {
+    padding: 8px;
+    border-radius: 5px;
+}
+.navLink {
+    color: var(--darkGrey);    
+}
+
+.icon {
+    color: var(--darkGrey);
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    display: none;
+}
+.nav1:active{
+    border: 1px solid var(--darkGrey);
+}
+
+@media (max-width : 1048px){
+ 
+    .navItems {
+        margin-right: 20px;
+    }
+    .navLink {
+        font-size: 17px;
+    }
+}
+
+@media (max-width : 909px) {
+    .icon{
+        display: block;
+    }
+    .navItems {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--white);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navItem {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    .navLink {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .show {
+        left: 0;
+    }
+}

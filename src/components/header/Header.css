@@ -1,0 +1,115 @@
+.header {
+    padding-top: 200px;    
+    height: 70vh;
+    width: 100%;
+    background-color: var(--lightGrey);
+       
+    text-align: center;    
+}
+
+
+
+.headingPrimary {
+    text-transform: uppercase;
+    color: var(--darkGrey);
+    text-align: center;
+    font-size: 40px;
+}
+
+.headingParagraph {
+    color : var(--darkGrey);
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.headingParagraph span {
+    display: block;
+}
+
+.headingParagraph span:not(:last-child){
+    padding-bottom: 20px;    
+}
+
+.headingButton {
+    background-color: var(--orangeDark);
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 100px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.headingButton a {
+    color: var(--white);
+}
+
+
+@media (max-width : 900px){
+    .header {
+        position: relative;
+    }
+    .headingPrimary {
+        text-align: left;
+        line-height: 2;
+        font-size: 35px;
+    }
+    .headingParagraph{
+        text-align: left;
+        font-size: 23px;        
+    }
+    .headingParagraph span{
+        display: none;
+    }
+    .headingParagraph::after{
+        content: "A passionate backend developer building robust and scalable infrastructure that can handle traffic and data.";
+        line-height: 2;
+    }
+    .headingBtn {
+        position: absolute;
+        left: 30%;
+        bottom: 10%;
+    }
+
+}
+
+@media (max-width : 420px){
+    .header {
+        position: relative;
+        
+    }
+    .headingParagraph::after{
+        content: "A passionate backend developer building robust and scalable infrastructure that can handle traffic and data.";
+        line-height: 2;
+        
+    }
+    .headingBtn {
+        position: absolute;
+        left: 30%;
+        bottom: 5%;
+    }
+}
+
+@media (max-width : 360px){
+    .header {
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .headingParagraph::after{
+        content: "A passionate backend developer building robust and scalable infrastructure that can handle traffic and data.";
+        line-height: 2;
+    }
+    .headingBtn {
+        position: absolute;
+        left: 30%;
+        bottom: 5%;
+    }
+    .padding{
+        padding: 0 10px;
+    }
+}
+
